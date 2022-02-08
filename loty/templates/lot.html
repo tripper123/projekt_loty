@@ -1,26 +1,26 @@
 
-
 {% extends "base.html" %}
 {% block widok %}
 <table>
-    <tr>
-
-
+        <tr>
+        <td>Lotnisko wylotu</td>
+        <td>Lotnisko przylotu</td>
+        <td>Data lotu</td>
+        <td>Kraj</td>
+        <td>Linia lotnicza</td>
 
     </tr>
-
     {% for lot in loty %}
     <tr>
-        <td><a href= "{{ lot.id }}">{{ lot.id }}</a></td>
-        <td>Lotnisko wylotu: {{ lot.lotnisko_wylot }}</td>
-        <td>Lotnisko przylotu: {{ lot.lotnisko_przylot }}</td>
-        <td>Data lotu:{{ lot.data_lotu }}</td>
-        <td>Kraj:{{ lot.kraj }}</td>
-        <td>Linia lotnicza: {{ lot.linia }}</td>
+        <td>{{ lot.lotnisko_wylot }}</td>
+        <td>{{ lot.lotnisko_przylot }}</td>
+        <td>{{ lot.data_lotu }}</td>
+        <td>{{ lot.kraj }}</td>
+        <td>{{ lot.linia }}</td>
 
+        <td><a href= "{{ lot.id }}">{{ lot.id }}</a></td>
     </tr>
     {% endfor %}
-
 
 </table>
 

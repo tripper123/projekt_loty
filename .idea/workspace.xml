@@ -14,6 +14,17 @@
       <change afterPath="$PROJECT_DIR$/../.idea/pythonProject3.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pythonProject4/.idea/pythonProject4.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pythonProject5/.idea/pythonProject5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/loty/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/loty/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/loty/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/loty/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/templates/lot.html" beforeDir="false" afterPath="$PROJECT_DIR$/loty/templates/lot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/templates/lot_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/loty/templates/lot_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/loty/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loty/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/loty/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django-pilkarz-klub" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8"/>
     <title>myflight</title>
-
-</head>
-<body>
-<p><a href="{% url 'index' %}"> Strona główna <a/></p>
-<p><a href="{% url 'lot' %}"> Przeglądaj loty<a/></p>
-<p><a href="{% url 'index' %}"> Lotnisko wylotu <a/></p>
-<p><a href="{% url 'index' %}"> Lotnisko przylotu <a/></p>
-<p><a href="{% url 'index2' %}"> Linia lotnicza <a/></p>
-
-</body>
-</html>
-    {% block widok %}
-   <h1>MOJE LOTY</h1>
-{% endblock %}
-
 <div id="content">
     {% block content %}
        <h1>MOJE LOTY</h1>
     {% endblock content%}
 </div>
+</head>
+
+<body>
+<p><a href="{% url 'lot' %}"> Strona główna <a/></p>
+<p><a href="{% url 'lot' %}"> Przeglądaj loty<a/></p>
+<p><a href="{% url 'lot' %}"> Lotnisko wylotu <a/></p>
+<p><a href="{% url 'lot' %}"> Lotnisko przylotu <a/></p>
+<p><a href="{% url 'lot' %}"> Linia lotnicza <a/></p>
+
+</body>
+</html>
+    {% block widok %}
+
+{% endblock %}
+

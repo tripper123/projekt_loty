@@ -28,7 +28,9 @@ def lot(request):
             lotnisko_wylot = form.cleaned_data["lotnisko_wylot"]
             lotnisko_przylot = form.cleaned_data['lotnisko_przylot']
             data_lotu = form.cleaned_data["data_lotu"]
-            lot = Loty(lotnisko_wylot=lotnisko_wylot, lotnisko_przylot=lotnisko_przylot, data_lotu=data_lotu)
+            kraj = form.cleaned_data["kraj"]
+            linia = form.cleaned_data["linia"]
+            lot = Loty(lotnisko_wylot=lotnisko_wylot, lotnisko_przylot=lotnisko_przylot, data_lotu=data_lotu, kraj=kraj, linia=linia)
             lot.save()
             return redirect('lot')
         else:
@@ -56,8 +58,6 @@ def lot_detail(request, pk):
         else:
             context['form'] = form
             return render(request, template, context)
-
-
 
 def lot_delete(request, pk):
     if request.method == "POST":
