@@ -3,9 +3,9 @@ from django.db import models
 class Linie(models.Model):
     STATUS_CHOICES =( ('', ''), ('niskokosztowa','Niskokosztowa'), ('tradycyjna', 'Tradycyjna'), ('czarterowa', 'Czarterowa'))
     nazwa_linii = models.CharField(max_length=32)
-    rodzaj_linii = models.CharField(max_length=32, choices=STATUS_CHOICES, blank=True, null=True, default='')
+    rodzaj_linii = models.CharField(max_length=32, choices=STATUS_CHOICES, default='')
     def __str__(self):
-        return f'{self.nazwa_linii} {self.rodzaj_linii}'
+        return f'{self.nazwa_linii} '
     class Meta:
         verbose_name="Linia"
         verbose_name_plural="Linie"
@@ -18,7 +18,7 @@ class Kraje(models.Model):
     kontynent = models.CharField(max_length=32, choices=STATUS_CHOICES)
 
     def __str__(self):
-        return f'{self.nazwa_kraju} {self.kontynent}'
+        return f'{self.nazwa_kraju}'
 
     class Meta:
         verbose_name="Kraj"

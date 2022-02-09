@@ -20,4 +20,4 @@ class LotyForm(forms.ModelForm):
 
     class Meta:
         model = Loty
-        fields = ('lotnisko_wylot', 'lotnisko_przylot', 'data_lotu', 'kraj', 'linia')
+        fields = ('lotnisko_wylot', 'lotnisko_przylot', 'data_lotu', 'kraj' , 'linia' )

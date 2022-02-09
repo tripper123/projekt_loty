@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{% block widok %}
+<!--<table>-->
+<!--        <tr>-->
+<!--        <td>Lotnisko wylotu</td>-->
+<!--        <td>Lotnisko przylotu</td>-->
+<!--        <td>Data lotu</td>-->
+<!--        <td>Kraj</td>-->
+<!--        <td>Linia lotnicza</td>-->
+
+<!--    </tr>-->
+<!--    {% for lot in loty %}-->
+<!--    <tr>-->
+<!--        <td>{{ lot.lotnisko_wylot }}</td>-->
+<!--        <td>{{ lot.lotnisko_przylot }}</td>-->
+<!--        <td>{{ lot.data_lotu }}</td>-->
+<!--        <td>{{ lot.kraj }}</td>-->
+<!--        <td>{{ lot.linia }}</td>-->
+
+<!--    -->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+
+<!--</table>-->
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="DODAJ LOT">
+</form>
+
+
+{% endblock widok %}

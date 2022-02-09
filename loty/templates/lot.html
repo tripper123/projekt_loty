@@ -17,18 +17,23 @@
         <td>{{ lot.data_lotu }}</td>
         <td>{{ lot.kraj }}</td>
         <td>{{ lot.linia }}</td>
+        <td><a href= "{{ lot.id }}" >
+                <button type="button" class="btn btn-warning">
+              modyfikuj </a>
+             </button>
+        </td>
 
-        <td><a href= "{{ lot.id }}">{{ lot.id }}</a></td>
+
     </tr>
     {% endfor %}
 
 </table>
 
-<form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Dodaj">
-</form>
+<!--<form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form }}-->
+<!--    <input type="submit" value="Dodaj">-->
+<!--</form>-->
 
 
 {% endblock widok %}
