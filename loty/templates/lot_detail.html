@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block widok %}
-<a href="{% url 'lot' %}">
+<a href="{% url 'modyfikuj_lot' %}">
     <button type="button" class="btn btn-warning">
-        Wroc
+        Powrót
     </button>
 </a>
 <table>
@@ -25,25 +25,9 @@
     <tr>
         <th>Kraj</th>
         <td>{{ lot.kraj }}</td>
-
-
-
     </tr>
-
-
-<!--        <td><a href = "loty/{{ lot_detail.linia }}"> {{ loty }} </a></td>-->
 
 </table>
 
-<!--<form method="post">-->
-<!--    {% csrf_token %}-->
-<!--    {{ form }}-->
-<!--    <input type="submit" value="Submit">-->
-<!--</form>-->
-
-<form action="{{ lot.id }}/delete" method="post">
-    {% csrf_token %}
-    <input type="submit" value="USUŃ LOT">
-</form>
 {% endblock widok %}
 

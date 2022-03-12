@@ -15,7 +15,7 @@ class Kraje(models.Model):
     ('', ''), ('europa', 'Europa'), ('azja', 'Azja'),('afryka', 'Afryka'), ('ameryka południowa', 'Ameryka Południowa'),('australia', 'Australia'), \
     ('ameryka północna', 'Ameryka Północna'))
     nazwa_kraju = models.CharField(max_length=32)
-    kontynent = models.CharField(max_length=32, choices=STATUS_CHOICES)
+    kontynent = models.CharField(max_length=32, choices=STATUS_CHOICES, default='')
 
     def __str__(self):
         return f'{self.nazwa_kraju}'
@@ -37,3 +37,4 @@ class Loty(models.Model):
     class Meta:
         verbose_name="Lot"
         verbose_name_plural="Loty"
+

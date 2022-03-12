@@ -1,4 +1,5 @@
 from .models import Loty, Kraje, Linie
+
 from django import forms
 from django.forms import DateInput
 
