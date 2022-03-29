@@ -1,5 +1,4 @@
 from .models import Loty, Kraje, Linie
-
 from django import forms
 from django.forms import DateInput
 
@@ -22,3 +21,7 @@ class LotyForm(forms.ModelForm):
     class Meta:
         model = Loty
         fields = ('lotnisko_wylot', 'lotnisko_przylot', 'data_lotu', 'kraj' , 'linia' )
+
+class LoginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField(widget=forms.PasswordInput)

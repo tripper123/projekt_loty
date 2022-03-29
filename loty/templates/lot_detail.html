@@ -1,32 +1,39 @@
 {% extends "base.html" %}
 {% block widok %}
-<a href="{% url 'modyfikuj_lot' %}">
+<a href="{% url 'detail' %}">
     <button type="button" class="btn btn-warning">
-        Powrót
+        powrót
     </button>
 </a>
 <table>
     <tr>
-        <th>Lotnisko wylotu</th>
+        <th>Z KTÓREGO MIASTA BYŁ WYLOT</th>
         <td>{{ lot.lotnisko_wylot }}</td>
     </tr>
     <tr>
-        <th>Lotnisko przylotu</th>
+        <th>DO KTÓREGO MIASTA BYŁ PRZYLOT</th>
         <td>{{ lot.lotnisko_przylot }}</td>
     </tr>
     <tr>
-        <th>Data lotu</th>
+        <th>JAKI BYŁ DZIEŃ LOTU</th>
         <td>{{ lot.data_lotu }}</td>
     </tr>
     <tr>
-        <th>Linia lotnicza</th>
+        <th>KTÓRA LINIA OBSŁUGIWAŁA POŁĄCZENIE</th>
         <td>{{ lot.linia }}</td>
     </tr>
+        <tr>
+        <th>JAKI TO BYŁ RODZAJ LINII LOTNICZEJ</th>
+        <td>{{ lot.linia.rodzaj_linii }}</td>
+    </tr>
     <tr>
-        <th>Kraj</th>
+        <th>DO KTÓREGO KRAJU ODBYWAŁ SIĘ LOT</th>
         <td>{{ lot.kraj }}</td>
     </tr>
-
+    <tr>
+        <th>NA KTÓRYM KONTYNENCIE LĄDOWAŁ SAMOLOT</th>
+        <td>{{ lot.kraj.kontynent }}</td>
+    </tr>
 </table>
 
 {% endblock widok %}

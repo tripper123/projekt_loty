@@ -24,6 +24,7 @@ class Kraje(models.Model):
         verbose_name="Kraj"
         verbose_name_plural="Kraje"
 
+
 class Loty(models.Model):
     lotnisko_wylot = models.CharField(max_length=32)
     lotnisko_przylot = models.CharField(max_length=32)

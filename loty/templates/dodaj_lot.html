@@ -2,10 +2,10 @@
 {% extends "base.html" %}
 {% block widok %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="DODAJ LOT">
-</form>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="DODAJ LOT">
+    </form>
 
 {% endblock widok %}

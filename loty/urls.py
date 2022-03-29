@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import lot, lot_detail, lot_delete, dodaj_lot, modyfikuj_lot, index, pagination, usun_lot
+from .views import lot, lot_detail, lot_delete, dodaj_lot, detail, index, pagination, usun_lot, user_login, login
 from . import views
 
 urlpatterns = [
@@ -13,10 +13,8 @@ urlpatterns = [
         path("", index, name="index"),
         path("pagination", index, name="pagination"),
         path("     ", views.PostListView.as_view(), name= "lot"),
-        path(" modyfikuj_lot ", views.PostListView2.as_view(), name= "modyfikuj_lot"),
-        path(" usun_lot ", views.PostListView3.as_view(), name= "usun_lot")
-
-
-
+        path(" detail ", views.PostListView2.as_view(), name= "detail"),
+        path(" usun_lot ", views.PostListView3.as_view(), name= "usun_lot"),
+        path(" ", user_login, name="login")
 
 ]

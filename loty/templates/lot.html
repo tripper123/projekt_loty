@@ -1,9 +1,7 @@
-
 {% extends "base.html" %}
 {% block widok %}
 
 <table>
-
     <tr>
         <td><b>Lotnisko wylotu</td> </b>
         <td><b>Lotnisko przylotu</td> </b>
@@ -18,17 +16,10 @@
         <td>{{ lot.data_lotu }}</td>
         <td>{{ lot.kraj }}</td>
         <td>{{ lot.linia }}</td>
-<!--       <td>-->
-<!--            <a href= "{{ lot.id }}" >-->
-<!--                <button type="button" class="btn btn-warning">-->
-<!--              modyfikuj </a>-->
-<!--             </button>-->
-<!--        </td>-->
-
     </tr>
             {% endfor %}
-
 </table>
+
 {% block content %}
 {% include "pagination.html" with page=page_obj %}
 {% endblock %}
