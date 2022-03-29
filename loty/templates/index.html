@@ -1,10 +1,42 @@
 
-{% extends "base.html" %}
-{% block widok %}
 
-<img src="//samolot-niebo.jpg" alt="Tu podaj tekst alternatywny">
+{% load static %}
 
-{% endblock widok %}
+
+
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Index - Moja strona</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <span style="color: white">
+          <h1>Witaj na mojej stronie prezentującej zestawienie wszystkich dotychczas odbytych lotów</h1>
+        <h2>Strona zawiera informacje o miastach wylotu i przylotu oraz datach odbytych podróży.
+        </h2>
+            <h3>Już wkrótce strona zostanie rozbudowana o dodatkowe informacje</h3>
+
+
+        </span>
+
+    </div>
+
+</body>
+
+       <li>
+        <a href="{% url 'lot' %}">
+          -> przejdź dalej
+        </a>
+      </li>
+</html>
+
+
 
 
 
