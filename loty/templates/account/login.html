@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block widok %}
+
 {% block content %}
 
-    <p>Wpisz login i hasło</p>
-
         <form action="." method="post">
+                <p>Wpisz username:uzytkownik i password:haslo123 aby sprawdzić poprawnosc dzialania formularza logowania</p>
+
             {{ form.as_p }}
             {% csrf_token %}
             <input type="submit" value="Zaloguj">

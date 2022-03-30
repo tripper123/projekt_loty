@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -7,7 +6,6 @@
     <title>moje loty</title>
 
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-
     <link href="{% static 'css/sidebars.css' %}" rel="stylesheet">
     <script src="{% static 'js/sidebars.js' %}"></script>
     <style>
@@ -18,6 +16,7 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+
       }
       @media (min-width: 1000px) {
         .bd-placeholder-img-lg {
@@ -29,9 +28,9 @@
         padding: 20px;
     }
 </style>
+
 </head>
 <body>
-<body style="background-color: white; color: black">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -146,7 +145,7 @@
     <hr>
 
   </div>
-{% block widok %}
+    {% block widok %}
     {% endblock %}
 </main>
 </body>

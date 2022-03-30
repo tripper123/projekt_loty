@@ -158,7 +158,7 @@ def user_login(request):
                 else:
                     return HttpResponse('BŁĄD LOGOWANIA')
             else:
-                return HttpResponse('nieprawidlowe dane')
+                return HttpResponse('NIEPRAWIDLOWE DANE')
     else:
         form = LoginForm()
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'account/login.html', {'form': form})
