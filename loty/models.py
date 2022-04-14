@@ -38,4 +38,3 @@ class Loty(models.Model):
     class Meta:
         verbose_name="Lot"
         verbose_name_plural="Loty"
-
