@@ -19,6 +19,6 @@ print(df)
 print(linie)
 
 print(lata)
-
+print(lata)
 print(lotnisko_wylotu)
 print(lotnisko_przylotu)
