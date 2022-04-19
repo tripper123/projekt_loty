@@ -164,3 +164,13 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
+
+def index2(request):
+    template = "index2.html"
+    context = {}
+    return render(request, template, context)
+
+def index3(request):
+    template = "index3.html"
+    context = {}
+    return render(request, template, context)
