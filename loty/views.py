@@ -174,3 +174,5 @@ def index3(request):
     template = "index3.html"
     context = {}
     return render(request, template, context)
+
+
