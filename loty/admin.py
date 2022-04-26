@@ -1,14 +1,9 @@
 
 
-# Register your models here.
+
 from django.contrib import admin
 from .models import Loty, Kraje, Linie
-# Register your models here.
 
-# class RokAdmin(admin.ModelAdmin):
-#     list_display = ('data_lotu', 'lotnisko_wylotu', 'lotnisko_przylotu')
-#
-# admin.site.register(Rok)
 class LinieAdmin(admin.ModelAdmin):
     list_display = ['nazwa_linii', 'rodzaj_linii']
 
