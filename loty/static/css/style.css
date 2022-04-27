@@ -1,0 +1,26 @@
+body {
+    background: black;
+    margin: 0 5%;
+}
+
+.top {
+    background: blue;
+    border: 3px solid #acacac;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0px;
+    text-align:left;
+ }
+
+.menu, .footer {
+    background: #cccccc;
+    border: 3px solid #acacac;
+    padding: 10px;
+    text-align:middle;
+}
+
+a {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}

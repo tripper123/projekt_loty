@@ -1,0 +1,65 @@
+
+{% load static %}
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+<html lang="pl">
+  <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+       <li>
+        <a href="{% url 'index' %}"class="nav-link active">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          STRONA GŁÓWNA
+        </a>
+        <a href="{% url 'lot' %}"class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          MOJE LOTY
+        </a>
+        <a href="{% url 'detail'  %}" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          SZCZEGÓŁY LOTÓW
+        </a>
+        <a href="{% url 'dodaj_lot' %}" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          DODAJ
+        </a>
+        <a href="{% url 'usun_lot'  %}" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          USUŃ
+        </a>
+        <a href="{% url 'index3'  %}" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          ANALIZA LOTÓW
+        </a>
+        <a href="{% url 'login'  %}" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+         LOGOWANIE
+        </a>
+    </ul>
+    <hr>
+</head>
+<body>
+
+    <div class="top">
+        <span style="color: white">
+
+        <h1>
+
+    <form method="post">
+        <p>Uzupełnij dane aby dodac lot</p>
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="DODAJ LOT">
+    </form>
+
+        </h1>
+
+
+    </div>
+
+</body>
+</html>
