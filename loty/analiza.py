@@ -40,14 +40,17 @@ def create_reports(folder_path: str):
 
 
     text_file = open("templates/index2.html", "w")
-    # text_file.write('Łączny koszt lotów')
-    # text_file.write(sum)
+    text_file.write("Najpopularniejsze linie lotnicze")
     text_file.write(html)
+    text_file.write("Lata z największą liczbą lotów")
     text_file.write(html2)
+    text_file.write("Lotniska z największą liczbą wylotów")
     text_file.write(html3)
+    text_file.write("Lotniska z największą liczbą przylotów")
     text_file.write(html4)
+    text_file.write("Lista najtańszych lotów")
     text_file.write(html6)
-    text_file.write(html7)
+    text_file.write("Lista najdroższych lotów")
 
     text_file.close()
 create_reports('../data/dane1.xlsx')
