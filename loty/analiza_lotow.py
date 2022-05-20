@@ -13,7 +13,6 @@ def create_reports(folder_path: str):
     df['rok'] = df['data']
     df['rok'] = df['data'].dt.year
     df['cena'] = df['cena'].astype(int)
-
     linie = df.groupby('linia lotnicza')['linia lotnicza'].count().sort_values(ascending=0).head(10)\
         .to_frame().rename(columns ={'linia lotnicza':'ilość lotów'})
     lata = df.groupby('rok')['rok'].count().sort_values(ascending=0).head(10)\
@@ -35,11 +34,8 @@ def create_reports(folder_path: str):
     html4 = pd.DataFrame(lotnisko_przylotu).to_html(classes='table table-striped text-center', justify='center')
     html6 = pd.DataFrame(najtansze_loty).to_html(classes='table table-striped text-center', justify='center')
     html7 = pd.DataFrame(najdrozsze_loty).to_html(classes='table table-striped text-center', justify='center')
-    sum = str(df['cena'].sum())
-    srednia = df['cena'].mean().astype(int)
 
-
-    text_file = open("templates/index2.html", "w")
+    text_file = open("templates/analiza_do_html.html", "w")
     text_file.write("Najpopularniejsze linie lotnicze")
     text_file.write(html)
     text_file.write("Lata z największą liczbą lotów")
@@ -51,6 +47,6 @@ def create_reports(folder_path: str):
     text_file.write("Lista najtańszych lotów")
     text_file.write(html6)
     text_file.write("Lista najdroższych lotów")
-
+    text_file.write(html7)
     text_file.close()
 create_reports('../data/dane1.xlsx')

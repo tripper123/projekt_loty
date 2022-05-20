@@ -12,7 +12,7 @@
   <hr>
     <ul class="nav nav-pills flex-column mb-auto">
        <li>
-        <a href="{% url 'index' %}"class="nav-link active">
+        <a href="{% url 'strona_glowna' %}"class="nav-link active">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           STRONA GŁÓWNA
         </a>
@@ -32,7 +32,7 @@
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           USUŃ
         </a>
-        <a href="{% url 'index3'  %}" class="nav-link text-white">
+        <a href="{% url 'analiza_lotow'  %}" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           ANALIZA LOTÓW
         </a>
@@ -43,23 +43,13 @@
     </ul>
     <hr>
 
-
 <body>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <div class="top">
         <span style="color: white">
-          <h1>Witaj na mojej stronie prezentującej zestawienie wszystkich dotychczas odbytych lotów
-          </h1>
-        <h2>Strona zawiera informacje o miastach wylotu i przylotu oraz datach odbytych podróży.
-        </h2>
-
+       {% include "analiza_do_html.html" %}
 
     </div>
-
 </body>
-</html>
-
 
 
 

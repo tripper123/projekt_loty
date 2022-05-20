@@ -95,8 +95,8 @@ def detail(request):
             context['form'] = form
             return render(request, template, context)
 
-def pagination(request):
-    template = "pagination.html"
+def stronicowanie(request):
+    template = "stronicowanie.html"
     object_list = Loty.objects.all()
     page = request.GET.get('page')
     paginator = Paginator(object_list, 6)  # 6 employees per page
@@ -108,8 +108,8 @@ def pagination(request):
         page_obj = paginator.page(paginator.num_pages)
     return render(request, template, {'page_obj': page_obj, 'form': LotyForm})
 
-def index(request):
-    template = "index.html"
+def strona_glowna(request):
+    template = "strona_glowna.html"
     context = {}
     return render(request, template, context)
 
@@ -166,13 +166,13 @@ def user_login(request):
 
 
 
-def index2(request):
-    template = "index2.html"
+def analiza_do_html(request):
+    template = "analiza_do_html.html"
     context = {}
     return render(request, template, context)
 
-def index3(request):
-    template = "index3.html"
+def analiza_lotow(request):
+    template = "analiza_lotow.html"
     context = {}
     return render(request, template, context)
 
