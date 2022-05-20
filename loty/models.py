@@ -12,8 +12,8 @@ class Linie(models.Model):
 
 class Kraje(models.Model):
     STATUS_CHOICES = (
-    ('', ''), ('europa', 'Europa'), ('azja', 'Azja'),('afryka', 'Afryka'), ('ameryka południowa', 'Ameryka Południowa'),('australia', 'Australia'), \
-    ('ameryka północna', 'Ameryka Północna'))
+    ('', ''), ('Europa', 'Europa'), ('Azja', 'Azja'),('Afryka', 'Afryka'), ('Ameryka Południowa', 'Ameryka Południowa'),('Australia', 'Australia'), \
+    ('Ameryka Północna', 'Ameryka Północna'))
     nazwa_kraju = models.CharField(max_length=32)
     kontynent = models.CharField(max_length=32, choices=STATUS_CHOICES, default='')
 

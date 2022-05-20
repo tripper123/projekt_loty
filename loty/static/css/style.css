@@ -10,8 +10,9 @@ body {
     border-radius: 30px;
     padding: 30px;
     margin: 20px 0px;
-    text-align:left;
-    font size: 30px
+    text-align:center;
+    font size: 30px;
+
  }
 
 .menu, .footer {

@@ -4,17 +4,16 @@ from .views import lot, lot_detail, lot_delete, dodaj_lot, detail, strona_glowna
 from . import views
 
 urlpatterns = [
-        path("lot", views.PostListView.as_view(), name="lot"),
+        path("moje_loty",views.PostListView.as_view(), name="lot"),
         path("lot.id", lot_detail, name="lot_detail"),
         path("<int:pk>", lot_detail, name="lot_detail"),
         path("<int:pk>/delete", lot_delete, name="lot_delete"),
-        path(" dodaj_lot ", dodaj_lot, name="dodaj_lot"),
+        path("dodaj_lot", dodaj_lot, name="dodaj_lot"),
         path("", strona_glowna, name="strona_glowna"),
         path("stronicowanie", strona_glowna, name="stronicowanie"),
-        path("     ", views.PostListView.as_view(), name= "lot"),
-        path(" detail ", views.PostListView2.as_view(), name= "detail"),
-        path(" usun_lot ", views.PostListView3.as_view(), name= "usun_lot"),
-        path("login/", views.user_login, name="login"),
-        path("        ", analiza_lotow, name="analiza_lotow"),
+        path("szczegoly_lotow", views.PostListView2.as_view(), name= "detail"),
+        path("usun_lot", views.PostListView3.as_view(), name= "usun_lot"),
+        path("logowanie/", views.user_login, name="login"),
+        path("analiza_lotow", analiza_lotow, name="analiza_lotow"),
 
 ]
